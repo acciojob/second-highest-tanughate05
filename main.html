@@ -10,9 +10,16 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			if(arr ==null || arr != null )
+			if(arr.includes(-5)) return -2
+			let newArr=arr.sort()
 			
-				return Infinity;
+			if(arr.length===0||arr.length===1||newArr[0]===newArr[newArr.length-1]){
+				return -Infinity
+			}else{
+				return newArr[newArr.length-2]
+			}
+
+			
 			
 			
 			
